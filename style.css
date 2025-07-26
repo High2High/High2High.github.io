@@ -20,11 +20,11 @@ header {
 
 h1 {
     font-family: 'CreativeAdvanture', cursive;
-    font-size: 3em;
+    font-size: 4em;
     margin: 0;
     background: linear-gradient(to right, darkgreen, lightgreen);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: darkgreen;
     display: inline-block;
 }
 
@@ -32,10 +32,10 @@ h1 {
     font-family: 'CreativeAdvanture', cursive;
     font-size: 1em;
     margin: 0.5em 2em 0 0;
-    text-align: right;
+    text-align: end; padding-right: 2em;
     background: linear-gradient(to right, darkgreen, lightgreen);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: darkgreen;
 }
 
 .hero-img {
@@ -90,4 +90,15 @@ footer {
 
 .social-links a:hover {
     opacity: 0.8;
+}
+
+footer .contact {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+}
+
+footer .contact a {
+    color: white;
+    text-decoration: underline;
 }
