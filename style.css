@@ -24,7 +24,7 @@ h1 {
     margin: 0;
     background: linear-gradient(to right, darkgreen, lightgreen);
     -webkit-background-clip: text;
-    color: #789C5D;
+    color: #94F250;
     display: inline-block;
 }
 
@@ -35,7 +35,7 @@ h1 {
     display: block; margin: 0 auto; text-align: right; max-width: 650px;
     background: linear-gradient(to right, darkgreen, lightgreen);
     -webkit-background-clip: text;
-    color: #789C5D;
+    color: #94F250;
 }
 
 .hero-img {
@@ -93,7 +93,7 @@ footer {
 }
 
 footer .contact {
-    font-size: 1.1em;
+    font-size: 20px;
     font-weight: bold;
     color: white;
 }
@@ -104,14 +104,14 @@ footer .contact a {
 }
 
 footer .contact {
-    font-family: 'CreativeAdvanture', cursive;
-    color: #789C5D;
-    font-size: 1.2em;
+    color: #94F250;
+    font-size: 20px;
     font-weight: bold;
 }
 
 footer .contact a {
-    color: #789C5D;
+    color: #94F250;
+    font-family: inherit;
     text-decoration: none;
 }
 
