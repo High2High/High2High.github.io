@@ -20,22 +20,22 @@ header {
 
 h1 {
     font-family: 'CreativeAdvanture', cursive;
-    font-size: 4em;
+    font-size: 6em;
     margin: 0;
     background: linear-gradient(to right, darkgreen, lightgreen);
     -webkit-background-clip: text;
-    color: darkgreen;
+    color: #8ED15E;
     display: inline-block;
 }
 
 .subtitle {
     font-family: 'CreativeAdvanture', cursive;
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 0.5em 2em 0 0;
-    text-align: end; padding-right: 2em;
+    display: block; margin: 0 auto; text-align: right; max-width: 650px;
     background: linear-gradient(to right, darkgreen, lightgreen);
     -webkit-background-clip: text;
-    color: darkgreen;
+    color: #8ED15E;
 }
 
 .hero-img {
