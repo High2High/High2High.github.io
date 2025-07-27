@@ -1,38 +1,36 @@
 
 body {
-    background-color: black;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-
-.cover-image {
-    display: block;
-    margin: 0 auto;
-    width: 75%;
+.cover {
+  width: 75%;
+  margin-top: 1rem;
 }
-
 .social-icons {
-    margin: 20px 0;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
-
-.social-icons a img {
-    width: 40px;
-    margin: 0 10px;
-    filter: drop-shadow(0 0 3px white);
+.social-icons img {
+  width: 36px;
+  height: 36px;
+  filter: drop-shadow(0 0 3px white);
 }
-
 .contact-info {
-    margin-bottom: 30px;
+  margin-top: 2rem;
 }
-
 .email a {
-    color: #00bfff;
-    text-decoration: none;
+  color: #00CFFF;
+  text-decoration: none;
+  font-weight: bold;
 }
-
 .phone a {
-    color: #ff69b4;
-    text-decoration: none;
+  color: #FF4CA3;
+  text-decoration: none;
+  font-weight: bold;
 }
