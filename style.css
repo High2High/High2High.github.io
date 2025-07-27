@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #74390f;
+    background-color: #000000;
     color: #3d2c29;
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #f7c59f;
+    background-color: #000000;
     padding: 2em 0 1em 0;
 }
 
@@ -50,7 +50,7 @@ h1 {
     display: inline-block;
     margin: 0.5em;
     padding: 0.5em 1em;
-    background-color: #ed6a5a;
+    background-color: #000000;
     color: white;
     text-decoration: none;
     border-radius: 8px;
@@ -58,11 +58,11 @@ h1 {
 }
 
 .social-links a:hover {
-    background-color: #d6554a;
+    background-color: #000000;
 }
 
 footer {
-    background-color: #f7c59f;
+    background-color: #000000;
     padding: 1em 0;
     margin-top: 2em;
 }
@@ -81,11 +81,11 @@ footer {
     text-decoration: none;
 }
 
-.social-links a.spotify { background-color: #1DB954; }
-.social-links a.youtube { background-color: #FF0000; }
-.social-links a.instagram { background-color: #E1306C; }
+.social-links a.spotify { background-color: #000000; }
+.social-links a.youtube { background-color: #000000; }
+.social-links a.instagram { background-color: #000000; }
 .social-links a.tiktok { background-color: #000000; }
-.social-links a.facebook { background-color: #3b5998; }
+.social-links a.facebook { background-color: #000000; }
 .social-links a.x { background-color: #000000; }
 
 .social-links a:hover {
