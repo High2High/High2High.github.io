@@ -1,267 +1,72 @@
+
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Not Seeing High 2 High</title>
-  <link rel='stylesheet' href='styles/main.css'>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJCBQMFY3J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GJCBQMFY3J');
+  </script>
+  <script src="https://kit.fontawesome.com/92feff8be1.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    img {
+      width: 75%;
+      max-width: 700px;
+      margin-top: 20px;
+    }
+    .social-icons {
+      margin: 30px 0 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 32px;
+    }
+    .social-icons a {
+      color: white;
+      text-shadow: 0 0 5px #fff;
+      text-decoration: none;
+    }
+    .contacts {
+      margin-bottom: 40px;
+      font-size: 1.2em;
+    }
+    .contacts a {
+      text-decoration: none;
+    }
+    .email {
+      color: #00cfff;
+    }
+    .phone {
+      color: #ff53a1;
+    }
+  </style>
 </head>
 <body>
-  <div class="vertical-stack">
-    <div class="cover-section">
-      <img src='assets/cover.png' alt='Not Seeing High 2 High Logo' class="logo">
-    </div>
-
-    <div class="player-section">
-      <audio id="main-player" controls class="neon-player">
-        <source src="https://www.laffcast.com/mp3s/KupMuffShow/KupMuff-229-The-Lastcast.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-
-    <div class="list-section">
-      <div id="episode-list" class="episode-scroll">
-        <div><strong>229 - The Lastcast</strong><br><small> Sat, 01 Jun 2019 19:00:00 -0400  – 130.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/KupMuff-229-The-Lastcast.mp3')">Play</button></div>
-<div><strong>228 - You're A Disgrace!</strong><br><small> Tue, 26 Jan 2016 21:00:00 -0500  – 64.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/KupMuff-228-Youre-A-Disgrace.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 227</strong><br><small> Tue, 13 Oct 2015 21:00:00 -0400  – 35.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-227.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 226</strong><br><small> Tue, 15 Sep 2015 21:00:00 -0400  – 54.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-226.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 225</strong><br><small> Tue, 21 Jul 2015 21:00:00 -0400  – 60.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-225.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 224</strong><br><small> Tue, 30 Jun 2015 21:00:00 -0400  – 55.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-224.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 223</strong><br><small> Tue, 09 Jun 2015 21:00:00 -0400  – 67.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-223.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 222</strong><br><small> Tue, 02 Jun 2015 21:00:00 -0400  – 56.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-222.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 221</strong><br><small> Tue, 26 May 2015 21:00:00 -0400  – 57.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-221.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 220</strong><br><small> Tue, 28 Apr 2015 21:00:00 -0400  – 34.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-220.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 219</strong><br><small> Tue, 14 Apr 2015 21:00:00 -0400  – 46.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-219.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 218</strong><br><small> Tue, 31 Mar 2015 21:00:00 -0400  – 43.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-218.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 217</strong><br><small> Tue, 17 Mar 2015 21:00:00 -0400  – 47.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-217.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 216</strong><br><small> Tue, 10 Mar 2015 21:00:00 -0400  – 42.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-216.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 215</strong><br><small> Tue, 24 Feb 2015 21:00:00 -0500  – 39.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-215.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 214</strong><br><small> Tue, 10 Feb 2015 21:00:00 -0500  – 44.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-214.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 213</strong><br><small> Tue, 03 Feb 2015 21:00:00 -0500  – 39.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-213.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 212</strong><br><small> Tue, 16 Dec 2014 21:00:00 -0500  – 44.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-212.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 211</strong><br><small> Tue, 09 Dec 2014 21:00:00 -0500  – 37.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-211.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 210</strong><br><small> Tue, 25 Nov 2014 21:00:00 -0500  – 32.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-210.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 209</strong><br><small> Tue, 11 Nov 2014 21:00:00 -0500  – 49.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-209.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 208</strong><br><small> Tue, 28 Oct 2014 21:00:00 -0400  – 42.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-208.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 207</strong><br><small> Tue, 07 Oct 2014 21:00:00 -0400  – 41.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-207.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 206</strong><br><small> Tue, 30 Sep 2014 21:00:00 -0400  – 36.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-206.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 205</strong><br><small> Tue, 23 Sep 2014 21:00:00 -0400  – 38.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-205.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 204</strong><br><small> Tue, 16 Sep 2014 21:00:00 -0400  – 42.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-204.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 203</strong><br><small> Tue, 09 Sep 2014 21:00:00 -0400  – 22.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-203.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 202</strong><br><small> Tue, 19 Aug 2014 21:00:00 -0400  – 24.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-202.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 201</strong><br><small> Tue, 12 Aug 2014 21:00:00 -0400  – 24.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-201.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 200</strong><br><small> Tue, 29 Jul 2014 21:00:00 -0400  – 27.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-200.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 199</strong><br><small>2014-07-22 – 20.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-199.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 198</strong><br><small>2014-07-01 – 22.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-198.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 197</strong><br><small>2014-06-24 – 19.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-197.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 196</strong><br><small>2014-06-03 – 23.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-196.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 195</strong><br><small>2014-05-20 – 20.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-195.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 194</strong><br><small>2014-05-13 – 21.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-194.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 193</strong><br><small>2014-05-06 – 28.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-193.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 192</strong><br><small>2014-04-29 – 19.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-192.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 191</strong><br><small>2014-04-29 – 17.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-191.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 190</strong><br><small>2014-04-15 – 25.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-190.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 189</strong><br><small>2014-04-08 – 24.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-189.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 188</strong><br><small>2014-04-01 – 26.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-188.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 187</strong><br><small>2014-03-18 – 26.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-187.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 186</strong><br><small>2014-03-11 – 25.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-186.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 185</strong><br><small>2014-03-04 – 22.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-185.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 184</strong><br><small>2014-02-25 – 57.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-184.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 183</strong><br><small>2014-02-18 – 57.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-183.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 182</strong><br><small>2014-02-11 – 50.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-182.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 181</strong><br><small>2014-02-04 – 21.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-181.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 180</strong><br><small>2014-01-21 – 21.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-180.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 179</strong><br><small>2014-01-14 – 21.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-179.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 178</strong><br><small>2014-01-07 – 19.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-178.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 177</strong><br><small> Tue, 17 Dec 2013 21:00:00 -0500  – 30.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-177.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 176</strong><br><small> Tue, 03 Dec 2013 21:00:00 -0500  – 22.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-176.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 175</strong><br><small> Tue, 26 Nov 2013 21:00:00 -0500  – 23.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-175.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 174</strong><br><small> Tue, 19 Nov 2013 21:00:00 -0500  – 25.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-174.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 173</strong><br><small> Tue, 29 Oct 2013 21:00:00 -0400  – 26.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-173.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 172</strong><br><small> Tue, 22 Oct 2013 21:00:00 -0400  – 22.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-172.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 171 - Edited</strong><br><small> Tue, 15 Oct 2013 21:00:00 -0400  – 28.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-171-E.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 170</strong><br><small> Tue, 08 Oct 2013 21:00:00 -0400  – 29.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-170.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 169</strong><br><small> Tue, 01 Oct 2013 21:00:00 -0400  – 26.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-169.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 168</strong><br><small> Tue, 24 Sep 2013 21:00:00 -0400  – 23.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-168.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 167</strong><br><small> Tue, 17 Sep 2013 21:00:00 -0400  – 20.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-167.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 166</strong><br><small> Tue, 10 Sep 2013 21:00:00 -0400  – 21.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-166.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 165</strong><br><small> Tue, 27 Aug 2013 21:00:00 -0400  – 24.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-165.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 164</strong><br><small> Tue, 30 Jul 2013 21:00:00 -0400  – 20.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-164.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 163</strong><br><small> Tue, 16 Jul 2013 21:00:00 -0400  – 23.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-163.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 162</strong><br><small> Tue, 02 Jul 2013 21:00:00 -0400  – 30.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-162.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 161</strong><br><small> Tue, 25 Jun 2013 21:00:00 -0400  – 28.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-161.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 160</strong><br><small> Tue, 18 Jun 2013 21:00:00 -0400  – 25.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-160.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 159</strong><br><small> Tue, 11 Jun 2013 21:00:00 -0400  – 26.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-159.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 158</strong><br><small> Tue, 04 Jun 2013 21:00:00 -0400  – 22.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-158.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 157</strong><br><small> Tue, 28 May 2013 21:00:00 -0400  – 21.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-157.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 156</strong><br><small> Tue, 14 May 2013 21:00:00 -0400  – 20.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-156.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 155</strong><br><small> Tue, 07 May 2013 21:00:00 -0400  – 26.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-155.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 154</strong><br><small> Tue, 23 Apr 2013 21:00:00 -0400  – 21.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-154.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 153</strong><br><small> Tue, 16 Apr 2013 21:00:00 -0400  – 27.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-153.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 152</strong><br><small> Tue, 09 Apr 2013 21:00:00 -0400  – 24.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-152.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 151</strong><br><small> Tue, 02 Apr 2013 21:00:00 -0400  – 24.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-151.mp3')">Play</button></div>
-<div><strong>The Joanne Show 150</strong><br><small> Tue, 19 Mar 2013 21:00:00 -0400  – 27.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-150-The-Joanne-Show-100.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 149</strong><br><small> Tue, 12 Mar 2013 21:00:00 -0400  – 20.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-149.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 148</strong><br><small> Tue, 05 Mar 2013 21:00:00 -0500  – 27.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-148.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 147</strong><br><small> Tue, 26 Feb 2013 21:00:00 -0500  – 27.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-147.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 146</strong><br><small> Tue, 19 Feb 2013 21:00:00 -0500  – 27.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-146.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 145</strong><br><small> Tue, 12 Feb 2013 21:00:00 -0500  – 27.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-145.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 144</strong><br><small> Tue, 05 Feb 2013 21:00:00 -0500  – 24.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-144.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 143</strong><br><small> Tue, 29 Jan 2013 21:00:00 -0500  – 19.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-143.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 142</strong><br><small> Tue, 15 Jan 2013 21:00:00 -0500  – 28.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-142.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 141</strong><br><small> Tue, 08 Jan 2013 21:00:00 -0500  – 33.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-141.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 140</strong><br><small> Tue, 18 Dec 2012 21:00:00 -0500  – 30.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-140.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 139</strong><br><small> Tue, 11 Dec 2012 21:00:00 -0500  – 28.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-139.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 138</strong><br><small> Tue, 04 Dec 2012 21:00:00 -0500  – 26.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-138.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 137</strong><br><small> Tue, 27 Nov 2012 21:00:00 -0500  – 44.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-137.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 136</strong><br><small> Tue, 20 Nov 2012 21:00:00 -0500  – 25.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-136.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 135</strong><br><small> Tue, 13 Nov 2012 21:00:00 -0500  – 30.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-135.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 134</strong><br><small> Tue, 06 Nov 2012 21:00:00 -0500  – 23.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-134.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 133</strong><br><small> Tue, 16 Oct 2012 21:00:00 -0400  – 29.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-133.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 132</strong><br><small> Tue, 09 Oct 2012 21:00:00 -0400  – 27.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-132.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 131</strong><br><small> Tue, 02 Oct 2012 21:00:00 -0400  – 26.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-131.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 130</strong><br><small> Tue, 25 Sep 2012 21:00:00 -0400  – 21.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-130.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 129</strong><br><small> Tue, 18 Sep 2012 21:00:00 -0400  – 22.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-129.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 128</strong><br><small> Tue, 11 Sep 2012 21:00:00 -0400  – 28.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-128.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 127</strong><br><small> Tue, 07 Aug 2012 21:00:00 -0400  – 23.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-127.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 126</strong><br><small> Tue, 07 Aug 2012 21:00:00 -0400  – 25.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-126.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 125</strong><br><small> Tue, 24 Jul 2012 21:00:00 -0400  – 26.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-125.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 124</strong><br><small> Tue, 17 Jul 2012 21:00:00 -0400  – 27.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-124.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 123</strong><br><small> Tue, 10 Jul 2012 21:00:00 -0400  – 28.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-123.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 122</strong><br><small> Tue, 26 Jun 2012 21:00:00 -0400  – 22.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-122.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 121</strong><br><small> Tue, 19 Jun 2012 21:00:00 -0400  – 22.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-121.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 120</strong><br><small> Tue, 12 Jun 2012 21:00:00 -0400  – 22.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-120.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 119</strong><br><small> Tue, 29 May 2012 21:00:00 -0400  – 33.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-119.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 118</strong><br><small> Tue, 22 May 2012 21:00:00 -0400  – 36.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-118.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 117</strong><br><small> Tue, 15 May 2012 21:00:00 -0400  – 32.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-117.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 116</strong><br><small> Tue, 08 May 2012 21:00:00 -0400  – 35.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-116.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 115</strong><br><small> Tue, 24 Apr 2012 21:00:00 -0400  – 33.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-115.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 114</strong><br><small> Tue, 17 Apr 2012 21:00:00 -0400  – 32.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-114.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 113</strong><br><small> Tue, 03 Apr 2012 21:00:00 -0400  – 34.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-113.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 112</strong><br><small> Tue, 27 Mar 2012 21:00:00 -0400  – 34.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-112.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 111</strong><br><small> Tue, 20 Mar 2012 21:00:00 -0400  – 27.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-111.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 110</strong><br><small> Tue, 13 Mar 2012 21:00:00 -0400  – 34.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-110.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 109</strong><br><small> Tue, 06 Mar 2012 21:00:00 -0400  – 32.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-109.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 108</strong><br><small> Tue, 28 Feb 2012 21:00:00 -0500  – 34.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-108.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 107</strong><br><small> Tue, 21 Feb 2012 21:00:00 -0500  – 36.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-107.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 106</strong><br><small> Tue, 07 Feb 2012 21:00:00 -0500  – 33.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-106.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 105</strong><br><small> Tue, 31 Jan 2012 21:00:00 -0500  – 26.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-105.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 104</strong><br><small> Tue, 24 Jan 2012 21:00:00 -0500  – 28.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-104.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 103</strong><br><small> Tue, 17 Jan 2012 21:00:00 -0500  – 27.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-103.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 102</strong><br><small> Tue, 10 Jan 2012 21:00:00 -0500  – 52.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-102.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 101</strong><br><small> Tue, 13 Dec 2011 21:00:00 -0500  – 10.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-101.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 100</strong><br><small> Sat, 10 Dec 2011 21:00:00 -0500  – 31.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-100.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 99</strong><br><small> Tue, 29 Nov 2011 21:00:00 -0500  – 15.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-99.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 98</strong><br><small> Tue, 22 Nov 2011 21:00:00 -0500  – 16.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-98.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 97</strong><br><small> Tue, 1 Nov 2011 21:00:00 -0400  – 17.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-97.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 96</strong><br><small> Tue, 25 Oct 2011 21:00:00 -0400  – 13.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-96.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 95</strong><br><small> Tue, 18 Oct 2011 21:00:00 -0400  – 18.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-95.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 94</strong><br><small> Mon, 10 Oct 2011 21:00:00 -0400  – 28.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-94.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 93</strong><br><small> Tue, 4 Oct 2011 21:00:00 -0400  – 17.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-93.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 92</strong><br><small> Tue, 27 Sep 2011 21:00:00 -0400  – 13.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-92.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 91</strong><br><small> Tue, 20 Sep 2011 21:00:00 -0400  – 13.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-91.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 90</strong><br><small> Tue, 13 Sep 2011 21:00:00 -0400  – 14.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-90.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 89</strong><br><small> Tue, 30 Aug 2011 21:00:00 -0400  – 15.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-89.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 88</strong><br><small> Tue, 23 Aug 2011 21:00:00 -0400  – 13.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-88.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 87</strong><br><small> Tue, 16 Aug 2011 21:00:00 -0400  – 14.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-87.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 86</strong><br><small> Tue, 02 Aug 2011 21:00:00 -0400  – 15.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-86.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 85</strong><br><small> Tue, 26 Jul 2011 21:00:00 -0400  – 16.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-85.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 84</strong><br><small> Tue, 19 Jul 2011 21:00:00 -0400  – 16.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-84.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 83</strong><br><small> Tue, 12 Jul 2011 21:00:00 -0400  – 12.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-83.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 82</strong><br><small> Tue, 21 Jun 2011 21:00:00 -0400  – 13.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-82.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 81</strong><br><small> Tue, 14 Jun 2011 21:00:00 -0400  – 10.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-81.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 80</strong><br><small> Tue, 07 Jun 2011 21:00:00 -0400  – 134.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-80.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 79</strong><br><small> Tue, 31 May 2011 21:00:00 -0400  – 19.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-79.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 78</strong><br><small> Tue, 24 May 2011 21:00:00 -0400  – 18.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-78.mp3')">Play</button></div>
-<div><strong>The KupMuff Show - Barnaby's Take II</strong><br><small> Sat, 21 May 2011 20:00:00 -0400  – 241.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/KUPMUFF-BARNABYS-LIVE2.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 77</strong><br><small> Tue, 17 May 2011 21:00:00 -0400  – 19.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-77.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 76</strong><br><small> Tue, 10 May 2011 21:00:00 -0400  – 15.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-76.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 75</strong><br><small> Tue, 03 May 2011 21:00:00 -0400  – 15.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-75.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 74</strong><br><small> Tue, 26 Apr 2011 21:00:00 -0400  – 11.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-74.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 73</strong><br><small> Tue, 12 Apr 2011 21:00:00 -0400  – 20.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-73.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 72</strong><br><small> Tue, 05 Apr 2011 21:00:00 -0400  – 15.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-72.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 71</strong><br><small> Tue, 29 Mar 2011 21:00:00 -0400  – 18.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-71.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 70</strong><br><small> Tue, 22 Mar 2011 21:00:00 -0400  – 14.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-70.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 69 - LOL</strong><br><small> Tue, 15 Mar 2011 21:00:00 -0400  – 14.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-69-lol.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 68</strong><br><small>2011-03-08 – 14.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-68.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 67</strong><br><small>2011-03-01 – 15.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-67.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 66</strong><br><small>2011-02-22 – 14.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-66.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 65</strong><br><small>2011-02-15 – 17.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-65.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 64</strong><br><small>2011-02-08 – 13.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-64.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 63</strong><br><small>2011-02-02 – 15.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-63.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 62</strong><br><small>2011-01-19 – 13.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-62.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 61</strong><br><small>2011-01-12 – 12.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-61.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 60</strong><br><small>2010-12-22 – 13.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-60.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 59</strong><br><small>2010-12-08 – 13.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-59.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 58</strong><br><small>2010-12-01 – 15.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-58.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 57</strong><br><small>2010-11-17 – 10.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-57.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 56</strong><br><small>2010-11-10 – 16.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-56.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 55</strong><br><small>2010-10-27 – 12.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-55.mp3')">Play</button></div>
-<div><strong>The KupMuff Weekend Show 54</strong><br><small>2010-10-23 – 15.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Weekend-Show-54.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 53</strong><br><small>2010-10-13 – 12.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-53.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 52</strong><br><small>2010-10-06 – 19.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-52.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 51</strong><br><small>2010-09-29 – 17.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-51.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 50</strong><br><small>2010-09-22 – 15.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-50.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 49</strong><br><small>2010-09-01 – 16.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-49.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 48</strong><br><small>2010-07-14 – 12.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-48.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 47</strong><br><small>2010-07-07 – 14.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-47.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 46</strong><br><small>2010-06-30 – 14.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-46.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 45</strong><br><small>2010-06-23 – 11.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-45.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 44</strong><br><small>2010-06-16 – 12.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-44.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 43</strong><br><small>2010-05-26 – 12.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-43.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 42</strong><br><small>2010-05-19 – 13.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-42.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 41</strong><br><small>2010-04-28 – 14.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-41.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 40</strong><br><small>2010-04-21 – 13.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-40.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 39</strong><br><small>2010-04-14 – 13.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-39.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 38</strong><br><small>2010-04-07 – 12.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-38.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 37</strong><br><small>2010-03-31 – 12.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-37.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 36</strong><br><small>2010-03-24 – 21.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-36.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 35</strong><br><small>2010-03-10 – 11.8MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-35.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 34</strong><br><small>2010-03-03 – 13.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-34.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 33</strong><br><small>2010-02-24 – 15.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-33.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 32</strong><br><small>2010-02-03 – 12.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-32.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 31</strong><br><small>2010-01-27 – 13.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-31.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 30</strong><br><small>2010-01-20 – 11.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-30.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 29</strong><br><small>2010-01-13 – 12.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-29.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 28</strong><br><small>2009-10-21 – 12.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-28.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 27</strong><br><small>2009-10-07 – 11.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-27.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 26</strong><br><small>2009-09-30 – 11.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-26.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 25</strong><br><small>2009-09-23 – 26.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-25.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 24</strong><br><small>2009-07-01 – 27.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-24.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 23</strong><br><small>2009-06-24 – 27.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-23.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 22</strong><br><small>2009-06-17 – 27.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-22.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 21</strong><br><small>2009-06-10 – 29.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-21.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 20</strong><br><small>2009-05-27 – 29.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-20.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 19</strong><br><small>2009-05-20 – 30.0MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-19.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 18</strong><br><small>2009-05-13 – 27.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-18.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 17</strong><br><small>2009-05-06 – 28.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-17.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 16</strong><br><small>2009-04-29 – 31.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-16.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 15</strong><br><small>2009-04-22 – 26.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-15.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 14</strong><br><small>2009-04-15 – 26.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-14.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 13</strong><br><small>2009-04-08 – 28.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-13.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 12</strong><br><small>2009-04-01 – 32.4MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-12.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 11</strong><br><small>2009-03-25 – 27.7MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-11.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 10</strong><br><small>2009-03-18 – 30.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-10.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 9</strong><br><small>2009-03-11 – 30.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-9.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 8</strong><br><small>2009-02-25 – 27.6MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-8.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 7</strong><br><small>2009-02-25 – 33.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-7.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 6</strong><br><small>2009-02-18 – 33.3MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-6.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 5</strong><br><small>2009-02-11 – 30.1MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-5.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 4</strong><br><small>2009-02-04 – 25.9MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-4.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 3</strong><br><small>2009-01-28 – 24.2MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-3.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 2</strong><br><small>2009-01-21 – 25.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-2.mp3')">Play</button></div>
-<div><strong>The KupMuff Show 1</strong><br><small>2009-01-14 – 27.5MB</small><br><button onclick="play('https://www.laffcast.com/mp3s/KupMuffShow/The-KupMuff-Show-1.mp3')">Play</button></div>
-
-      </div>
-    </div>
+  <img src="assets/cover.png" style="width:75%;height:auto;margin-top:20px;" alt="Not Seeing High 2 High" />
+  <div class="social-icons" style="margin-top:-10px;">
+    <a href="https://www.youtube.com/@NotSeeingHigh2High" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" style="text-shadow: 0 0 5px white;"></i></a>
+    <a href="https://www.spotify.com" target="_blank" aria-label="Spotify"><i class="fab fa-spotify" style="text-shadow: 0 0 5px white;"></i></a>
+    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="text-shadow: 0 0 5px white;"></i></a>
+    <a href="https://www.x.com" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter" style="text-shadow: 0 0 5px white;"></i></a>
+    <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok" style="text-shadow: 0 0 5px white;"></i></a>
   </div>
-
-  <script>
-    function play(url) {
-      const player = document.getElementById("main-player");
-      player.src = url;
-      player.play();
-    }
-  </script>
+  <div class="contacts">
+    <div><a class="email" href="mailto:hi2hi420@gmail.com">Message: Hi2Hi420@gmail.com</a></div>
+    <div><a class="phone" href="tel:19844445438">Hotline: 1-98-HIGH-KIDS</a></div>
+  </div>
 </body>
 </html>
